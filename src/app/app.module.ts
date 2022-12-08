@@ -4,32 +4,42 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { ProductsComponent } from './products/products.component';
 import { FooterComponent } from './footer/footer.component';
-import { OffreEmploiComponentComponent } from './offre-emploi-component/offre-emploi-component.component';
+import { ProductComponent } from './product/product.component';
+import { OffresEmploiComponentComponent } from './offres-emploi-component/offres-emploi-component.component';
 import { FormsModule } from '@angular/forms';
-import { NotFoundComponentComponent } from './not-found-component/not-found-component.component';
-import { ArticleComponent } from './article/article.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { ArticlesComponent } from './articles/articles.component';
 import { AddProductComponent } from './add-product/add-product.component';
 import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
+import { TodoListComponent } from './todo-list/todo-list.component';
+import {HttpClientModule} from '@angular/common/http';
+import { ModifierProductComponent } from './modifier-product/modifier-product.component';
 
+//annotation/decorateur
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    ProductsComponent,
     FooterComponent,
-    OffreEmploiComponentComponent,
-    NotFoundComponentComponent,
-    ArticleComponent,
+    ProductComponent,
+    OffresEmploiComponentComponent,
+    NotFoundComponent,
+    ArticlesComponent,
     AddProductComponent,
-    TemplateDrivenFormComponent
+    TemplateDrivenFormComponent,
+    TodoListComponent,
+    ModifierProductComponent
+   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
+
   ],
+  //declaration des services 
   providers: [],
   bootstrap: [AppComponent]
 })

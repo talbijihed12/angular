@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { driven } from '../core/Driven';
 
 @Component({
   selector: 'app-template-driven-form',
@@ -6,24 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./template-driven-form.component.css']
 })
 export class TemplateDrivenFormComponent implements OnInit {
-  template!:TemplateDrivenFormComponent;
+  Driven!:driven;
+   titreg="Informations générales ";
+   titrep="Informations de payement ";
 
-  titre:String = "Informations generales"
-  Nom!:string;
-  email!:string;
-  titre1:String = "Informations de payement"
-  Type!:string;
-  Num!:number;
-  Date!:Date;
-  code!:number;
   constructor() { }
 
   ngOnInit(): void {
-    this.template = new TemplateDrivenFormComponent();
+    this.Driven= new driven();
   }
   ajouter(){
-    console.log(this.template)// aafficher eli ajoutetou
+    console.log(this.Driven)
   }
-
 
 }

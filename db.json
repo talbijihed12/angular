@@ -1,0 +1,18 @@
+{
+  "products": [
+    {
+      "title": "maryem",
+      "price": 20,
+      "quantity": 10,
+      "picture": "https://www.santevet.com/upload/admin/images/article/Chat%202/portrait_chat/les_5_sens_du_chat.jpg",
+      "id": 1
+    },
+    {
+      "title": "turki",
+      "price": 20,
+      "quantity": 1,
+      "picture": "https://blog.europ-assistance.be/wp-content/uploads/thumbs/sad_dog-nrz00skf6yp9atl196bt1g8cng5xii68l9jt2e7xvs.jpg",
+      "id": 3
+    }
+  ]
+}
